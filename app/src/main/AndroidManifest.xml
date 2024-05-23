@@ -21,45 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Splash_Screen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Profile_Page"
-            android:exported="false" />
-        <activity
-            android:name=".Send_Money"
-            android:exported="false" />
-        <activity
-            android:name=".Request_Money"
-            android:exported="false" />
-        <activity
-            android:name=".Home_Page_Empty_Case"
-            android:exported="false" />
-        <activity
-            android:name=".Home_Page"
-            android:exported="false" />
-        <activity
-            android:name=".Signup_Page"
-            android:exported="false" />
-        <activity
-            android:name=".Login_page"
-            android:exported="false" />
-        <activity
-            android:name=".Welcome_Screen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.billeteramodulo4
+package com.example.billeteramodulo4.model
 
 data class Contactos(
     val photo: Int,

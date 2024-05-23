@@ -3,8 +3,8 @@ package com.example.billeteramodulo4.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.billeteramodulo4.Contactos
 import com.example.billeteramodulo4.databinding.ItemContactsBinding
+import com.example.billeteramodulo4.model.Contactos
 
 class ContactoAdapter(private val contactosList: List<Contactos>) :
     RecyclerView.Adapter<ContactoAdapter.ContactoViewHolder>() {
