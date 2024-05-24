@@ -19,7 +19,6 @@ class LoginPage : Fragment() {
 
     private val viewModel: LoginPageViewModel by viewModels()
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,7 +30,6 @@ class LoginPage : Fragment() {
         binding.crearUnaNuevaCuentaLogin.setOnClickListener {
 
             findNavController().navigate(R.id.action_loginPageFragment_to_singupPageFragment)
-
         }
         return root
     }
@@ -41,13 +39,10 @@ class LoginPage : Fragment() {
 
         binding.apply {
             btnLogin.setOnClickListener {
-
-                val email = editTextTextEmailAddress.text.toString()
-                val password = editTextTextPassword.text.toString()
+                val email = etEmailAddress.text.toString()
+                val password = etPassword.text.toString()
                 viewModel.validarCorreo(email, password)
-
             }
-
         }
 
         viewModel.validarUsuario.observe(viewLifecycleOwner, Observer { valido ->
@@ -55,13 +50,11 @@ class LoginPage : Fragment() {
             if (valido === true) {
                 Toast.makeText(requireContext(), "Sesion iniciada", Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_loginPageFragment_to_homePageEmptyCase)
-
+                binding.etEmailAddress.setText("") // Borrar el caché del EditText
+                binding.etPassword.setText("")// Borrar el caché del EditText
             } else {
                 Toast.makeText(requireContext(), "Usuario no valido", Toast.LENGTH_SHORT).show()
             }
-
         })
-
     }
-
 }

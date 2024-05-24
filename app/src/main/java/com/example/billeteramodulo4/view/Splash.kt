@@ -9,26 +9,22 @@ import androidx.navigation.fragment.findNavController
 import com.example.billeteramodulo4.R
 import com.example.billeteramodulo4.databinding.FragmentSplashBinding
 
-
 class Splash : Fragment() {
 
     private lateinit var binding: FragmentSplashBinding
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
 
+        // Infla el diseño del fragmento
         binding = FragmentSplashBinding.inflate(inflater, container, false)
         val root = binding.root
 
         binding.root.setOnClickListener {
             findNavController().navigate(R.id.action_splash_to_welcomeFragment)
-
         }
         return root
-
     }
 }

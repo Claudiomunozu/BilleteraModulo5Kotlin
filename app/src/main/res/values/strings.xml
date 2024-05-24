@@ -42,7 +42,6 @@
     <string name="_15_000">+ $ 15.000</string>
     <string name="rodrigo_salas">Rodrigo Salas</string>
     <string name="oct_11_01_19_am">Oct 11, 01:19 AM</string>
-    <string name="_8_900">+ $ 8.900</string>
     <string name="tania_rojas">Tania Rojas</string>
     <string name="oct_07_09_10_am">Oct 07, 09:10 AM</string>
     <string name="_29_000">- $ 29.000</string>
@@ -68,7 +67,6 @@
     <string name="centro_de_ayuda">Centro de Ayuda</string>
     <string name="tania_rojas_gmail_com">Tania.rojas@gmail.com</string>
     <string name="cantidad_a_ingresar">Cantidad a Ingresar</string>
-    <string name="_55_000">$ 55.000</string>
     <string name="agregar_notas_de_transferencia_opcional">Agregar Notas de Transferencia (opcional)</string>
     <string name="rodrigo_fuentes">Rodrigo Fuentes</string>
     <string name="rodrigo_fuentes_gmail_com">Rodrigo.fuentes@gmail.com</string>
@@ -76,6 +74,7 @@
     <string name="notas_de_transferencia">Notas de Transferencia</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cerrar_sesion">cerrar sesion</string>
 
 
 </resources>

@@ -95,6 +95,9 @@
         <action
             android:id="@+id/action_homePageEmptyCase_to_profilePage"
             app:destination="@id/profilePage" />
+        <action
+            android:id="@+id/action_homePageEmptyCase_to_splash"
+            app:destination="@id/splash" />
     </fragment>
     <fragment
         android:id="@+id/profilePage"

@@ -13,7 +13,6 @@ class HomePageEmptyCase : Fragment() {
 
     private lateinit var binding: FragmentHomePageEmptyCaseBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,8 +32,11 @@ class HomePageEmptyCase : Fragment() {
         binding.profileuserempty.setOnClickListener {
             findNavController().navigate(R.id.action_homePageEmptyCase_to_profilePage)
         }
+
+        binding.tvCerrarSesion.setOnClickListener {
+            findNavController().navigate(R.id.action_homePageEmptyCase_to_splash)
+        }
+
         return root
     }
-
-
 }

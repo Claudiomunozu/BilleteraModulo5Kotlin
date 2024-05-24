@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.billeteramodulo4.R
-import com.example.billeteramodulo4.adapter.ContactoAdapter
 import com.example.billeteramodulo4.databinding.FragmentHomePageBinding
 import com.example.billeteramodulo4.model.DatosContactoProveedor
+import com.example.billeteramodulo4.view.adapter.ContactsAdapter
 
 class HomePage : Fragment() {
 
@@ -27,8 +27,6 @@ class HomePage : Fragment() {
 
         initRecyclerView()
 
-
-
         binding.btnenviadinerohomepage.setOnClickListener {
             findNavController().navigate(R.id.action_homePage_to_sendMoney)
         }
@@ -41,13 +39,12 @@ class HomePage : Fragment() {
             findNavController().navigate(R.id.action_homePage_to_profilePage)
         }
         return root
-
     }
 
     private fun initRecyclerView() {
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = ContactoAdapter(DatosContactoProveedor.contactoList)
+        recyclerView.adapter = ContactsAdapter(DatosContactoProveedor.contactoList)
     }
 
 }

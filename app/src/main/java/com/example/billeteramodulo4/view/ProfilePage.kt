@@ -9,11 +9,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.billeteramodulo4.R
 import com.example.billeteramodulo4.databinding.FragmentProfilePageBinding
 
-
 class ProfilePage : Fragment() {
 
     private lateinit var binding: FragmentProfilePageBinding
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,10 +24,6 @@ class ProfilePage : Fragment() {
         binding.sendhome.setOnClickListener {
             findNavController().navigate(R.id.action_profilePage_to_splash)
         }
-
-
         return root
     }
-
-
 }

@@ -21,9 +21,7 @@ class Welcome : Fragment() {
         val root = binding.root
 
         binding.buttonWelcome.setOnClickListener {
-
             findNavController().navigate(R.id.action_welcomeFragment_to_singupPageFragment)
-
         }
 
         binding.yatienescuenta.setOnClickListener {
@@ -31,6 +29,4 @@ class Welcome : Fragment() {
         }
         return root
     }
-
-
 }

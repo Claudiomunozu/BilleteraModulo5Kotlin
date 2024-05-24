@@ -49,7 +49,7 @@ dependencies {
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
-
+    implementation("androidx.lifecycle:lifecycle-livedata-core:2.8.0@aar (classes.jar)")
 
     implementation(libs.appcompat)
     implementation(libs.material)
